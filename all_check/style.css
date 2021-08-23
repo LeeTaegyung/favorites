@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+/* item_check */
+.item_check {
+    display: inline-block;
+}
+.item_check input {
+    display: none !important;
+}
+.item_check input + label {
+    display: block;
+    padding-left: 42px;
+    font-size: 18px;
+    font-size: 400;
+    line-height: 32px;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-image: url(ico_check_32x32_off.png);
+    cursor: pointer;
+}
+.item_check input:checked + label {
+    background-image: url(ico_check_32x32_on.png);
+}
+/* //item_check */
+
+.inner {
+    margin-top: 50px;
+}
+.all_check .item_check input + label {
+    font-size: 20px;
+    font-weight: 500;
+}
+.check_list {
+    margin-top: 20px;
+}
+.check_list li:not(:last-child) {
+    margin-bottom: 10px;
+}
