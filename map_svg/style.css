@@ -1,0 +1,18 @@
+
+.accomodation_map .map_svg svg {
+    width: 100%;
+}
+.accomodation_map .map_svg .land {
+    fill: #e2e2e2;
+    fill-opacity: 1;
+    stroke: #252525;
+    stroke-opacity: 1;
+    stroke-width: 1;
+}
+.accomodation_map .map_svg g {
+    cursor: pointer;
+}
+.accomodation_map .map_svg g.active .land,
+.accomodation_map .map_svg g:hover .land {
+    fill: #c5604e;
+}
