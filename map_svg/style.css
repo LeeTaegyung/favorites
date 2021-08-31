@@ -1,18 +1,74 @@
+@charset 'utf-8';
 
-.accomodation_map .map_svg svg {
-    width: 100%;
+.desc {
+    margin-top: 40px;
+    font-size: 18px;
+    line-height: 1.4;
 }
-.accomodation_map .map_svg .land {
+
+/* map_tab */
+.map_tab {
+    display: flex;
+    align-items: stretch;
+    margin: 50px 0;
+}
+.map_tab button {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 52px;
+    border: 1px solid #dbdbdb;
+    font-size: 16px;
+    font-weight: 500;
+    color: #252525;
+    text-transform: capitalize;
+    background: #f7f7f7;
+    box-sizing: border-box;
+}
+.map_tab button + button {
+    margin-left: -1px;
+}
+.map_tab button.on {
+    border-color: #252525;
+    background: #fff;
+    z-index: 1;
+}
+/* //map_tab */
+
+/* map_area */
+.map_area {
+    position: relative;
+    max-width: 500px;
+    width: calc(100% - 30px);
+    margin: 50px auto;
+    border: 4px solid #252525;
+    box-sizing: border-box;
+}
+.map_area::after {
+    display: block;
+    width: 100%;
+    padding-top: 119.715%;
+    content: '';
+}
+.map_area svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.map_area path {
     fill: #e2e2e2;
     fill-opacity: 1;
     stroke: #252525;
     stroke-opacity: 1;
     stroke-width: 1;
 }
-.accomodation_map .map_svg g {
+.map_area g {
     cursor: pointer;
 }
-.accomodation_map .map_svg g.active .land,
-.accomodation_map .map_svg g:hover .land {
+.map_area g.active path,
+.map_area g:hover path{
     fill: #c5604e;
 }
+/* //map_area */
