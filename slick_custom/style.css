@@ -1,0 +1,105 @@
+
+.inner {
+    padding: 50px 0;
+}
+.title {
+    margin-bottom: 20px;
+    font-size: 34px;
+}
+
+.slick_slider_wrap {
+    position: relative;
+    margin-bottom: 100px;
+}
+.pager_custom {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 11;
+}
+.pager_custom .pager_arrow {
+    display: block;
+    width: 32px;
+    height: 32px;
+    font-size: 0;
+}
+.pager_custom .pager_arrow i {
+    display: block;
+    font-size: 16px;
+    color: #fff;
+}
+.pager_custom .pager_dot {
+    display: flex;
+    align-items: center;
+}
+.pager_custom .pager_dot button {
+    display: block;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    text-indent: -9999em;
+    background: #fff;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+.pager_custom .pager_dot button.current {
+    opacity: 1;
+}
+.pager_custom .pager_num {
+    margin: 0 5px;
+    font-size: 16px;
+    color: #fff;
+}
+.pager_custom .pager_move {
+    display: block;
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+    color: #fff;
+}
+.pager_custom .pager_move.pause .fa-pause {
+    display: block;
+}
+.pager_custom .pager_move.pause .fa-play {
+    display: none;
+}
+.pager_custom .pager_move .fa-pause {
+    display: none;
+}
+.pager_custom .pager_move .fa-play {
+    display: block;
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
+.slick-dots li {
+    display: inline-block;
+}
+.slick-dots li button {
+    margin: 0 10px;
+    color: #fff;
+    opacity: 0.5;
+}
+.slick-dots li.slick-active button {
+    opacity: 1;
+}
+
+.slider_nav {
+    margin-top: 20px;
+}
+.slider_nav .slick-list {
+    margin: 0 -10px;
+}
+.slider_nav .slider_item {
+    margin: 0 10px;
+}
